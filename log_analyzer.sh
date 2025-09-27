@@ -1,6 +1,6 @@
 #!/bin/bash
 # ---------------------------------------------
-# 📊 Log Analyzer & Error Report Generator
+#  Log Analyzer & Error Report Generator
 # ---------------------------------------------
 # Parses system/application logs to detect errors, warnings,
 # and critical events. Generates structured reports (TXT/CSV),
@@ -62,6 +62,6 @@ COUNT_CRITICAL=$(echo "$CRITICAL" | wc -l)
 # Compress old reports (>5 days)
 find "$REPORT_DIR" -name "*.txt" -mtime +5 -exec gzip {} \;
 
-echo "✅ Reports generated:"
+echo " Reports generated:"
 echo "   - $REPORT_TXT"
 echo "   - $REPORT_CSV"
