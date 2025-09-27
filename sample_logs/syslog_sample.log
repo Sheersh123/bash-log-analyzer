@@ -1,0 +1,5 @@
+Sep 27 10:10:01 server sshd[1234]: ERROR Failed password for root from 192.168.0.10
+Sep 27 10:10:02 server sshd[1234]: WARNING Connection closed by 192.168.0.10
+Sep 27 10:10:05 server systemd[1]: CRITICAL Service nginx crashed
+Sep 27 10:10:06 server nginx[2222]: ERROR Connection reset by peer
+Sep 27 10:10:07 server sshd[1234]: ERROR Failed password for admin from 192.168.0.15
