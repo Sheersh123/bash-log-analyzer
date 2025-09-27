@@ -18,10 +18,10 @@ mkdir -p "$REPORT_DIR"
 
 # Validate input
 if [[ -z "$LOG_FILE" ]]; then
-    echo "❌ Usage: $0 <log_file>"
+    echo " Usage: $0 <log_file>"
     exit 1
 elif [[ ! -f "$LOG_FILE" ]]; then
-    echo "❌ Log file not found: $LOG_FILE"
+    echo " Log file not found: $LOG_FILE"
     exit 1
 fi
 
@@ -38,7 +38,7 @@ COUNT_CRITICAL=$(echo "$CRITICAL" | wc -l)
 # Generate TXT report
 {
     echo "=============================="
-    echo "   📊 Log Analyzer Report"
+    echo "   Log Analyzer Report"
     echo "   Generated: $(date)"
     echo "=============================="
     echo ""
